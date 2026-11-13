@@ -1,0 +1,28 @@
+# ── Firebase ──────────────────────────────────────────────────────────
+# Contains project identifiers and API keys — keep out of version control.
+# The file must still exist locally for the build; copy it manually on a
+# new machine (or inject it in CI) since git will not carry it.
+GoogleService-Info.plist
+
+# ── macOS ─────────────────────────────────────────────────────────────
+.DS_Store
+._*
+
+# ── Xcode user state (machine-specific, never commit) ─────────────────
+xcuserdata/
+*.xcuserstate
+*.xcuserdatad/
+
+# ── Build artifacts ───────────────────────────────────────────────────
+DerivedData/
+build/
+*.xcresult
+
+# ── Swift Package Manager ─────────────────────────────────────────────
+.build/
+# Note: the app's Package.resolved (inside .xcodeproj) SHOULD be committed
+# so everyone builds with the same Firebase version.
+
+# ── Misc ──────────────────────────────────────────────────────────────
+*.hprof
+*.orig
